@@ -172,7 +172,6 @@ body {
 }
 .footer-socials-icons li:hover,
 .footer-socials-icons li:active {
-
   background-color: var(--blue-color);
 }
 .footer-socials-icons li:focus,
