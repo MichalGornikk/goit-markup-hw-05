@@ -18,11 +18,9 @@ body {
   margin-right: auto;
 }
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto; 
+  padding: 0 15px;
+   max-width: 1200px;
 }
 .section {
   padding-bottom: 94px;
@@ -174,10 +172,17 @@ body {
 .footer-socials-icons li:active {
   background-color: var(--blue-color);
 }
-.footer-socials-icons li:focus,
+.footer-socials-icons a:focus,
 .footer-socials-icons li:active {
   background-color: var(--blue-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .container-main-work {
   background-color: var(--background-shadow-color);
@@ -332,6 +337,7 @@ body {
   justify-content: center;
   padding-bottom: 30px;
 }
+
 .container-team-icons li {
   width: 44px;
   height: 44px;
@@ -340,6 +346,22 @@ body {
   justify-content: center;
   align-items: center;
   fill: hsla(227, 6%, 70%, 1);
+  
+}
+.container-team-icons li:hover,
+.container-team-icons li:active,
+.container-team-icons a:focus
+ {
+  background-color: var(--blue-color);
+  cursor: pointer;
+  color: var(--blue-color);
+  fill: var(--blue-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-mate-worker {
   background-color: var(--white-color);
@@ -347,17 +369,6 @@ body {
   border-bottom-left-radius: 4px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
-}
-.container-team-icons li:hover,
-.container-team-icons li:active {
-  background-color: var(--blue-color);
-  fill: hsla(0, 0%, 100%, 1);
-  cursor: pointer;
-}
-.container-team-icons li:focus,
-.container-team-icons li:active {
-  background-color: var(--blue-color);
-  fill: hsla(0, 0%, 100%, 1);
 }
 .container-mate-worker img {
   display: block;
