@@ -119,6 +119,12 @@ body {
 .logo-second-footer {
   color: var(--white-color);
 }
+.footer-svg {
+  --color3: var(--white-color)
+}
+.team-social-icons:hover {
+--color3: var(--white-color)
+}
 .address-info {
   color: var(--white-color);
   font-style: normal;
@@ -163,10 +169,14 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--white-color);
+  fill: var(--black-color);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer-socials-icons svg {
+  margin-top: 4px;
+  fill: #0f0;
 }
 .footer-socials-icons li:hover,
 .footer-socials-icons li:active {
@@ -239,7 +249,7 @@ body {
   z-index: 2;
   position: absolute;
   width: 528px;
-  height: 581px;
+  height: 581colorpx;
   left: calc(50% - 264px);
   top: calc(50% - 275px);
   background: var(--white-color);
@@ -345,8 +355,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: hsla(227, 6%, 70%, 1);
-  
+  fill: rgb(0, 53, 245);
 }
 .container-team-icons li:hover,
 .container-team-icons li:active,
@@ -355,13 +364,13 @@ body {
   background-color: var(--blue-color);
   cursor: pointer;
   color: var(--blue-color);
-  fill: var(--blue-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  --color3: var(--white-color)
 }
 .container-mate-worker {
   background-color: var(--white-color);
@@ -408,14 +417,22 @@ body {
 .container-clients-list li:hover,
 .container-clients-list li:active {
   border: 1px solid var(--blue-color);
-  fill: var(--blue-color);
+  --color5: var(--blue-color);
+  --color3: var(--blue-color);
+  --color2: var(--blue-color);
   cursor: pointer;
 }
+
 .container-clients-list li:focus,
 .container-clients-list li:active {
   border: 1px solid var(--blue-color);
-  fill: var(--blue-color);
+  --color5: var(--blue-color);
+  --color3: var(--blue-color);
+  --color2: var(--blue-color);
+
+
 }
+
 .filtr-buttons {
   display: flex;
   justify-content: center;
@@ -455,10 +472,15 @@ body {
   overflow: hidden;
   position: relative;
 }
+
+.projects-page li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .projects-page figcaption {
   border-bottom: 1px solid var(--shiny-white);
   border-right: 1px solid var(--shiny-white);
   border-left: 1px solid var(--shiny-white);
+ 
 }
 .projects-page .project-photos {
   overflow: hidden;
@@ -490,18 +512,20 @@ figure .information-box {
   height: 100%;
   margin-bottom: 2px;
   letter-spacing: 3%;
+  
 }
+
 
 figure:hover .information-box {
   transform: translateY(-100%);
 }
+
+
 .project-img {
   overflow: hidden;
 }
 
 .projects-page figure:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 .title-logo {
