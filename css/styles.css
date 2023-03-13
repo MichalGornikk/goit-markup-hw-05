@@ -61,11 +61,27 @@ body {
   list-style: none;
   display: flex;
 }
-.link-emphasise {
-  border-bottom: 3px solid var(--blue-color);
+
+
+.main-navigation .under-line > a::after {
+  position: absolute;
+  display: block;
+    content: '';
+    width: 55px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--blue-color);
+    margin-top: 28px;
 }
-.main-navigation .under-line a;::after {
-  color: var(--blue-color);
+.main-navigation .under-line-portfolio > a::after {
+  position: absolute;
+  display: block;
+    content: '';
+    width: 59.31px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--blue-color);
+    margin-top: 28px;
 }
 .main-navigation a {
   text-decoration: none;
@@ -75,10 +91,15 @@ body {
   letter-spacing: 0.5px;
   margin-right: 46px;
   padding: 30px 0;
+
 }
+
 
 .main-navigation a[href="kontakt-link"] {
   margin-right: 0;
+}
+.main-navigation-contact {
+  margin-left: auto;
 }
 .main-navigation-contact {
   margin-left: auto;
